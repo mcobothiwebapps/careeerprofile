@@ -153,40 +153,114 @@ var woocommerce_params = {"ajax_url":"\/181\/wp-admin\/admin-ajax.php","wc_ajax_
             #wpadminbar {
                 display: none;
             }
+
+        </style>
+		  <style>
+           /* Header Styles */
+.custom-header {
+  position: fixed; /* Fix header at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white; /* Background color */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for separation */
+  padding: 10px 20px;
+}
+
+/* Header Container */
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Space between logo and navigation */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the header content */
+}
+
+/* Logo */
+.logo-container {
+  flex: 1; /* Allows logo to take space as needed */
+  text-align: left;
+}
+.custom-logo {
+  height: 60px; /* Adjust logo size */
+  width: auto;
+}
+
+/* Navigation */
+.custom-nav {
+  flex: 2; /* Adjusts navigation space */
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+}
+.twbb-nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+.twbb-item {
+  text-decoration: none;
+  font-size: 16px;
+  color: black; /* Black text */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+
+/* Contact Me Button */
+.contact-container {
+  flex: 0; /* Ensures button doesn't overlap */
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-button {
+  background-color: #a110b8; /* Dark pink background */
+  color: white; /* White text */
+  padding: 10px 20px;
+  border-radius: 25px; /* Rounded button */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid black; /* Black border */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Add Padding to the Body */
+body {
+  padding-top: 80px; /* Adjust based on header height */
+}
+
+
         </style>
 
 
     
     <!-- Google Tag Manager (noscript) --><noscript><iframe src="https://metrics.10web-site.ai/ns.html?id=GTM-M6GPZ95" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->       
-      		<div data-elementor-type="twbb_header" data-elementor-id="68003" class="elementor elementor-68003">
-				<div class="elementor-element elementor-element-mr92c7n7 twbb_section e-con-boxed e-flex e-con e-parent" data-id="mr92c7n7" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;tenweb_sticky&quot;:&quot;top&quot;,&quot;tenweb_sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;tenweb_sticky_offset&quot;:0,&quot;tenweb_sticky_effects_offset&quot;:0}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-9586fvny elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget elementor-widget-image" data-id="9586fvny" data-element_type="widget" data-widget_type="image.default">
+	<header class="custom-header">
+		<div class="header-container">
+		  <!-- Logo -->
+		 <div class="elementor-element elementor-element-9586fvny elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget elementor-widget-image" data-id="9586fvny" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 														<a >
 							<img width="150" height="100" src="content/logo_primary_dchDDjip.webp" class="attachment-full size-full wp-image-67937" alt="" />								</a>
 													</div>
 				</div>
-				<div class="elementor-element elementor-element-lgiofnqy elementor-widget__width-initial elementor-widget-tablet__width-initial twbb-nav-menu__align-right twbb-nav-menu__align-mobile-center twbb-nav-menu--indicator-classic twbb-nav-menu--toggle twbb-nav-menu--burger twbb-nav-menu--stretch yes twbb-nav-menu--dropdown-tablet twbb-nav-menu__text-align-center elementor-widget elementor-widget-twbb-nav-menu" data-id="lgiofnqy" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;,&quot;full_width&quot;:&quot; yes&quot;}" data-widget_type="twbb-nav-menu.default">
-				<div class="elementor-widget-container">
-			      <nav class="twbb-nav-menu--main twbb-nav-menu__container twbb-nav-menu--layout-horizontal e--pointer-none"><ul id="menu-1-lgiofnqy" class="twbb-nav-menu twbb-menu_term_id-7979"><li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67993"><a href="#" class="twbb-item">About Me</a></li>
+	  
+		  <!-- Navigation Menu -->
+		  <nav class="custom-nav">
+			<ul id="menu-1-lgiofnqy" class="twbb-nav-menu twbb-menu_term_id-7979">
+			  <li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67993"><a href="#" class="twbb-item">About Me</a></li>
 <li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67994"><a href="#" class="twbb-item">Projects</a></li>
 <li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67995"><a href="#" class="twbb-item">Experience</a></li>
 <li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67996"><a href="#" class="twbb-item">Testimonials</a></li>
-</ul></nav>
-            <div class="twbb-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
-            <i aria-hidden="true" role="presentation" class="twbb-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="twbb-menu-toggle__icon--close eicon-close"></i>            <span class="elementor-screen-only">Menu</span>
-        </div>
-            <nav class="twbb-nav-menu--dropdown twbb-nav-menu__container"><ul id="menu-2-lgiofnqy" class="twbb-nav-menu twbb-menu_term_id-7979"><li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67993"><a href="#" class="twbb-item">About Me</a></li>
-<li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67994"><a href="#" class="twbb-item">Projects</a></li>
-<li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67995"><a href="#" class="twbb-item">Experience</a></li>
-<li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67996"><a href="#" class="twbb-item">Testimonials</a></li>
-</ul></nav>
-          <style>
-          .twbb-nav-menu ul {display: none;}      </style>
-    		</div>
-				</div>
-				<div class="elementor-element elementor-element-nzfc3abn elementor-hidden-mobile elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-align-right elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="nzfc3abn" data-element_type="widget" data-widget_type="button.default">
+			</ul>
+		  </nav>
+	  
+		  <!-- Contact Me Button -->
+		  <div class="elementor-element elementor-element-nzfc3abn elementor-hidden-mobile elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-align-right elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="nzfc3abn" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
 			<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
@@ -197,9 +271,12 @@ var woocommerce_params = {"ajax_url":"\/181\/wp-admin\/admin-ajax.php","wc_ajax_
 		</div>
 				</div>
 				</div>
-					</div>
-				</div>
-				</div>
+		</div>
+	  </header>
+	  
+	  
+	  
+	  
 				<div data-elementor-type="wp-page" data-elementor-id="67986" class="elementor elementor-67986">
 						<section class="elementor-section elementor-top-section elementor-element elementor-element-7f979378 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="7f979378" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
 						<div class="elementor-container elementor-column-gap-no">
