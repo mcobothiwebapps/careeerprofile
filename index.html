@@ -18,22 +18,22 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Home | Bhekithemba Mcobothi">
 <meta property="og:description" content="Explore Bhekithemba Mcobothi's journey in empowering businesses through technology and software development expertise.">
-<meta property="og:image" content="https://mcobothiwebapps.github.io/profile.github.iocontent/my-images/img-grad.JPG">
-<meta property="og:url" content="https://mcobothiwebapps.github.io/profile.github.io/">
+<meta property="og:image" content="https://mcobothiwebapps.github.io/careeerprofile/content/my-images/img-grad.JPG">
+<meta property="og:url" content="https://mcobothiwebapps.github.io/careeerprofile/">
 <meta property="og:site_name" content="Bhekithemba Mcobothi">
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Home | Bhekithemba Mcobothi">
 <meta name="twitter:description" content="Explore Bhekithemba Mcobothi's journey in empowering businesses through technology and software development expertise.">
-<meta name="twitter:image" content="https://mcobothiwebapps.github.io/profile.github.iocontent/my-images/img-grad.JPG">
-<meta name="twitter:site" content="https://mcobothiwebapps.github.io/profile.github.io/">
+<meta name="twitter:image" content="https://mcobothiwebapps.github.io/careeerprofile/content/my-images/img-grad.JPG">
+<meta name="twitter:site" content="https://mcobothiwebapps.github.io/careeerprofile/">
 <meta name="twitter:creator" content="@bhekithemba_mc">
 
 
 
 <!-- Favicon -->
-<link rel="icon" href="https://mcobothiwebapps.github.io/profile.github.io/favicon_ico/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://mcobothiwebapps.github.io/careeerprofile/content/my-images/favicon_io/favicon.ico" type="image/x-icon">
 
 <!-- Additional Meta Tags -->
 <meta name="theme-color" content="#0073e6">
@@ -135,6 +135,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/181\/wp-admin\/admin-ajax.php","wc_aj
 var woocommerce_params = {"ajax_url":"\/181\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/181\/?wc-ajax=%%endpoint%%"};
 /* ]]> */
 </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
 </head>
 <body class="page-template-default page page-id-67986 page-parent theme-tenweb-website-builder-theme woocommerce-no-js elementor-default elementor-kit-68009 elementor-page elementor-page-67986">
@@ -233,12 +234,144 @@ body {
   padding-top: 80px; /* Adjust based on header height */
 }
 
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  /* Hide Logo on Mobile */
+  .logo-container {
+    display: none;
+  }
+
+  /* Reduce Navigation Menu Font Size */
+  .custom-nav ul li a {
+    display: none;
+  }
+
+  /* Resize Contact Button */
+  .contact-button {
+    display: none;
+  }
+
+  /* Ensure Menu Fits Mobile Width */
+  .custom-nav ul {
+    display: none;
+  }
+ 
+}
+
+
 
         </style>
+		<style>
+			/* Footer Styles */
+			.custom-footer {
+			  background-color: #f8f8f8; /* Light grey background */
+			  color: #333; /* Text color */
+			  padding: 20px 0;
+			  text-align: center;
+			  border-top: 1px solid #2e2d30; /* Purple border on top */
+			}
+			
+			/* Footer Container */
+			.footer-container {
+			  display: flex;
+			  flex-direction: column;
+			  align-items: center;
+			  gap: 15px; /* Space between sections */
+			  max-width: 1200px;
+			  margin: 0 auto;
+			}
+			
+			/* Logo Section */
+			.footer-logo {
+			  margin-bottom: 10px;
+			}
+			.footer-logo-img {
+			  width: 150px; /* Adjust as needed */
+			  height: auto;
+			}
+			
+			/* Navigation Menu */
+			.footer-nav {
+			  margin-bottom: 10px;
+			}
+			.footer-menu {
+			  list-style: none;
+			  display: flex;
+			  gap: 20px; /* Space between links */
+			  padding: 0;
+			  margin: 0;
+			}
+			.footer-link {
+			  text-decoration: none;
+			  font-size: 14px;
+			  color: #333; /* Text color */
+			  font-weight: 500;
+			  transition: color 0.3s ease;
+			}
+			.footer-link:hover {
+			  color: #6200ea; /* Purple hover effect */
+			}
+			
+			/* Social Media Icons */
+			.footer-socials {
+			  margin-bottom: 10px;
+			}
+			.social-link {
+			  font-size: 20px;
+			  color: #333; /* Default icon color */
+			  margin: 0 10px; /* Space between icons */
+			  transition: color 0.3s ease, transform 0.3s ease;
+			}
+			.social-link:hover {
+			  color: #6200ea; /* Purple on hover */
+			  transform: scale(1.1); /* Zoom effect */
+			}
+			
+			/* Divider */
+			.footer-divider {
+			  width: 80%;
+			  height: 1px;
+			  background: #ccc; /* Light grey line */
+			  margin: 20px 0;
+			}
+			
+			/* Footer Text */
+			.footer-text {
+			  font-size: 14px;
+			  color: #333; /* Text color */
+			}
+			
 
 
+
+
+
+			/* Header Scrolling Behavior */
+.custom-header {
+  transition: transform 0.3s ease-in-out;
+}
+
+			</style>
+
+<script>
+	// Scroll Behavior for Header
+let lastScrollY = window.scrollY;
+const header = document.querySelector('.custom-header');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > lastScrollY) {
+    // Scrolling down: hide the header
+    header.style.transform = 'translateY(-100%)';
+  } else {
+    // Scrolling up: show the header
+    header.style.transform = 'translateY(0)';
+  }
+  lastScrollY = window.scrollY;
+});
+
+</script>
     
-    <!-- Google Tag Manager (noscript) --><noscript><iframe src="https://metrics.10web-site.ai/ns.html?id=GTM-M6GPZ95" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->       
+	
 	<header class="custom-header">
 		<div class="header-container">
 		  <!-- Logo -->
@@ -248,6 +381,8 @@ body {
 							<img width="150" height="100" src="content/logo_primary_dchDDjip.webp" class="attachment-full size-full wp-image-67937" alt="" />								</a>
 													</div>
 				</div>
+
+				
 	  
 		  <!-- Navigation Menu -->
 		  <nav class="custom-nav">
@@ -589,7 +724,12 @@ body {
                 class="e-gallery-item elementor-gallery-item twbb-flex-end-item elementor-animated-content">
         
         <div class="twbb_item_image_section">
-          <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://10web-site.ai/181/wp-content/uploads/sites/193/2024/11/tenweb_media_fjjuwcp7.webp" data-width="1024" data-height="1024" alt="" ></div>
+			<div class="e-gallery-image elementor-gallery-item__image" 
+			data-thumbnail="content/projects/222.png" 
+			data-width="1024" 
+			data-height="1024" 
+			alt="Screenshot 1"></div>
+	   
                   </div>
                </div>
             </div>
@@ -597,39 +737,58 @@ body {
       		</div>
 				</div>
 				<div class="elementor-element elementor-element-oliykfj3 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-twbb_gallery" data-id="oliykfj3" data-element_type="widget" data-settings="{&quot;gallery_layout&quot;:&quot;grid&quot;,&quot;gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;hgap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;hgap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;columns&quot;:2,&quot;columns_mobile&quot;:2,&quot;aspect_ratio&quot;:&quot;1:1&quot;,&quot;image_hover_animation&quot;:&quot;grow&quot;,&quot;lazyload&quot;:&quot;yes&quot;,&quot;columns_tablet&quot;:2,&quot;gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;hgap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;image_title_description&quot;:&quot;on_hover&quot;}" data-widget_type="twbb_gallery.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-gallery__container">
-							<div
-                class="e-gallery-item elementor-gallery-item twbb-flex-end-item elementor-animated-content">
-        
-        <div class="twbb_item_image_section">
-          <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://10web-site.ai/181/wp-content/uploads/sites/193/2024/11/tenweb_media_mdwEnd8r.webp" data-width="1024" data-height="1024" alt="" ></div>
-                  </div>
-               </div>
-      				<div
-                class="e-gallery-item elementor-gallery-item twbb-flex-end-item elementor-animated-content">
-        
-        <div class="twbb_item_image_section">
-          <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://10web-site.ai/181/wp-content/uploads/sites/193/2024/11/tenweb_media_VupSRXcr.webp" data-width="1024" data-height="1024" alt="" ></div>
-                  </div>
-               </div>
-      				<div
-                class="e-gallery-item elementor-gallery-item twbb-flex-end-item elementor-animated-content">
-        
-        <div class="twbb_item_image_section">
-          <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://10web-site.ai/181/wp-content/uploads/sites/193/2024/11/tenweb_media_AbNi4nk1.webp" data-width="1024" data-height="1024" alt="" ></div>
-                  </div>
-               </div>
-      				<div
-                class="e-gallery-item elementor-gallery-item twbb-flex-end-item elementor-animated-content">
-        
-        <div class="twbb_item_image_section">
-          <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://10web-site.ai/181/wp-content/uploads/sites/193/2024/11/tenweb_media_N39YPnDe.webp" data-width="1024" data-height="1024" alt="" ></div>
-                  </div>
-               </div>
-            </div>
-
-      		</div>
+					<div class="elementor-widget-container">
+						<div class="elementor-gallery__container">
+						  <!-- Image 1 -->
+						  <div
+							class="e-gallery-item elementor-gallery-item twbb-flex-end-item elementor-animated-content">
+							<div class="twbb_item_image_section">
+							  <div class="e-gallery-image elementor-gallery-item__image"
+								data-thumbnail="content/projects/333.png"
+								data-width="1024"
+								data-height="1024" 
+								alt="Screenshot 1"></div>
+							</div>
+						  </div>
+					  
+						  <!-- Image 2 -->
+						  <div
+							class="e-gallery-item elementor-gallery-item twbb-flex-end-item elementor-animated-content">
+							<div class="twbb_item_image_section">
+							  <div class="e-gallery-image elementor-gallery-item__image"
+								data-thumbnail="content/projects/666.png"
+								data-width="1024"
+								data-height="1024" 
+								alt="Screenshot 2"></div>
+							</div>
+						  </div>
+					  
+						  <!-- Image 3 -->
+						  <div
+							class="e-gallery-item elementor-gallery-item twbb-flex-end-item elementor-animated-content">
+							<div class="twbb_item_image_section">
+							  <div class="e-gallery-image elementor-gallery-item__image"
+								data-thumbnail="content/projects/777.png"
+								data-width="1024"
+								data-height="1024" 
+								alt="Screenshot 3"></div>
+							</div>
+						  </div>
+					  
+						  <!-- Image 4 -->
+						  <div
+							class="e-gallery-item elementor-gallery-item twbb-flex-end-item elementor-animated-content">
+							<div class="twbb_item_image_section">
+							  <div class="e-gallery-image elementor-gallery-item__image"
+								data-thumbnail="content/projects/888.png"
+								data-width="1024"
+								data-height="1024" 
+								alt="Screenshot 4"></div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					  
 				</div>
 				</div>
 					</div>
@@ -1030,53 +1189,43 @@ Maintaining and updating database structures to optimize performance and usabili
 					</div>
 		</section>
 				</div>
-				<div data-elementor-type="twbb_footer" data-elementor-id="68004" class="elementor elementor-68004">
-				<div class="elementor-element elementor-element-32bqzdaa twbb_section e-con-boxed e-flex e-con e-parent" data-id="32bqzdaa" data-element_type="container">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-ylkpc814 e-con-full e-flex e-con e-parent" data-id="ylkpc814" data-element_type="container">
-				<div class="elementor-element elementor-element-fql2y1xu elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image" data-id="fql2y1xu" data-element_type="widget" data-widget_type="image.default">
+				<footer class="custom-footer">
+  <div class="footer-container">
+    <!-- Logo Section -->
+   <div class="elementor-element elementor-element-fql2y1xu elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image" data-id="fql2y1xu" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 														<a >
 							<img width="150" height="100" src="content/logo_primary_dchDDjip.webp" class="attachment-full size-full wp-image-67937" alt="" />								</a>
 													</div>
 				</div>
-				<div class="elementor-element elementor-element-k015tf8s elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit twbb-nav-menu__align-left twbb-nav-menu__align-mobile-center twbb-nav-menu--indicator-classic elementor-widget elementor-widget-twbb-nav-menu" data-id="k015tf8s" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;menu-columns&quot;:4,&quot;menu-columns_mobile&quot;:1,&quot;menu-columns_tablet&quot;:&quot;1&quot;}" data-widget_type="twbb-nav-menu.default">
-				<div class="elementor-widget-container">
-			      <nav class="twbb-nav-menu--main twbb-nav-menu__container twbb-nav-menu--layout-vertical e--pointer-none"><ul id="menu-1-k015tf8s" class="twbb-nav-menu twbb-menu_term_id-7980 sm-vertical twbb-menu-columns"><li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67997"><a href="#" class="twbb-item">About Me</a></li>
+
+    <!-- Navigation Menu -->
+    <nav class="footer-nav">
+      <ul class="footer-menu">
+       <li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67997"><a href="#" class="twbb-item">About Me</a></li>
 <li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67998"><a href="#" class="twbb-item">Projects</a></li>
 <li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67999"><a href="#" class="twbb-item">Experience</a></li>
 <li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-68000"><a href="#" class="twbb-item">Testimonials</a></li>
-</ul></nav>
-        <nav class="twbb-nav-menu--dropdown twbb-nav-menu__container"><ul id="menu-2-k015tf8s" class="twbb-nav-menu twbb-menu_term_id-7980 sm-vertical twbb-menu-columns"><li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67997"><a href="#" class="twbb-item">About Me</a></li>
-<li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67998"><a href="#" class="twbb-item">Projects</a></li>
-<li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-67999"><a href="#" class="twbb-item">Experience</a></li>
-<li class="a:1:{i:0;s:0:&quot;&quot;;} menu-item menu-item-type-post_type menu-item-object-page menu-item-68000"><a href="#" class="twbb-item">Testimonials</a></li>
-</ul></nav>
-          <style>
-                </style>
-    		</div>
-				</div>
-				<div class="elementor-element elementor-element-jj0meynl elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit e-grid-align-right e-grid-align-mobile-center elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="jj0meynl" data-element_type="widget" data-widget_type="social-icons.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-social-icons-wrapper elementor-grid">
-							<span class="elementor-grid-item">
-					<a href="https://www.linkedin.com/in/bhekithemba-mcobothi-010731225" class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-" target="_blank">
-						<span class="elementor-screen-only">Linkedin</span>
-						<i class="fab fa-linkedin"></i>					</a>
-				</span>
-							
-					</div>
-				</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-ew24i0lf elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="ew24i0lf" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-				</div>
-				</div>
+      </ul>
+    </nav>
+
+    <!-- Social Media Icons -->
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/bhekithemba-mcobothi-010731225" target="_blank" class="social-link">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="footer-divider"></div>
+
+  <!-- Footer Text -->
+  <div class="footer-text">
+    <p>© 2024 Bhekithemba Mcobothi. All rights reserved. Empowering businesses through technology and analytical expertise.</p>
+  </div>
+</footer>
+
                 <div class="elementor-element elementor-element-1tr2tzqe e-con-full e-flex e-con e-parent" 
      data-id="1tr2tzqe" 
      data-element_type="container" 
@@ -1087,9 +1236,7 @@ Maintaining and updating database structures to optimize performance and usabili
          data-id="wnty777y" 
          data-element_type="widget" 
          data-widget_type="text-editor.default">
-        <div class="elementor-widget-container">
-            © 2024 Bhekithemba Mcobothi. All rights reserved. Empowering businesses through technology and analytical expertise.
-        </div>
+       
     </div>
     
     <!-- Navigation Menu -->
